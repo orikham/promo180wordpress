@@ -1,0 +1,721 @@
+/*
+Theme Name: promo180
+Theme URI: 
+Author: toi
+Description: My theme
+Tags: Responsive web design
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.row-limit-size {
+    max-width: 1200px;
+    width: 100%;
+
+    margin: 0 auto;
+}
+
+@font-face {
+    font-family: 'Titania-Outline';
+    src: url(./media/font/Titania-Outline.ttf);
+}
+
+@font-face {
+    font-family: 'Titania-Regular';
+    src: url(./media/font/Titania-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Titania-Shadow';
+    src: url(./media/font/Titania-Shadow.ttf);
+}
+
+@font-face {
+    font-family: 'NeolandSerif';
+    src: url(./media/font/Neoland\ Serif.ttf);
+}
+
+@font-face {
+    font-family: 'Storyboo';
+    src: url(./media/font/Storyboo.TTF);
+}
+
+@font-face {
+    font-family: 'NEONLEDLight';
+    src: url(./media/font/NEONLEDLight.otf);
+}
+
+@font-face {
+    font-family: 'XmasTerpiece';
+    src: url(./media/font/XmasTerpiece.ttf);
+}
+
+@font-face {
+    font-family: 'XmasTerpieceSwashes';
+    src: url(./media/font/XmasTerpieceSwashes.ttf);
+}
+
+@font-face {
+    font-family: 'RetroGaming';
+    src: url(./media/font/Retro\ Gaming.ttf);
+}
+
+
+
+body {
+
+    font-family: Arial, sans-serif;
+    background-image: url(./media/image/fond.png);
+    background-repeat: repeat;
+
+    /*debut du header*/
+    &>header {
+        text-align: center;
+        padding: 10px;
+        display: flex;
+        position: relative;
+
+        &>#divlogo {
+            width: 200px;
+            height: 200px;
+            cursor: pointer;
+
+            &>#logoVideo {
+                width: 200px;
+                height: 200px;
+            }
+        }
+
+
+
+        &>#menu {
+            position: absolute;
+            top: 10px;
+            left: 17%;
+            z-index: 2;
+            display: none;
+
+            &>ul {
+                list-style: none;
+                display: flex;
+
+                &>li {
+                    margin-bottom: 10px;
+
+                    &>a {
+                        text-decoration: none;
+
+                        &>img {
+                            width: 200px;
+                            height: 200px;
+                        }
+
+                    }
+                }
+            }
+
+
+
+
+
+
+
+        }
+
+        &>#menu.affiche {
+            display: block;
+            animation: deroulementmenu 2.5s forwards;
+        }
+
+
+        &>.prez {
+            display: flex;
+            flex-direction: column;
+            height: 200px;
+            background-color: #653bb8;
+            position: absolute;
+            left: 17%;
+
+            &>h1 {
+                font-family:Titania-Regular;
+                font-size: 4rem;
+                color: #dc3c4d;
+                padding-top: 15px;
+
+                
+            }
+
+            &>p {
+
+                
+                font-family: Titania-Regular;
+                font-size: 2rem;
+                color: #dc3c4d;
+
+            }
+
+        }
+
+        &>#prez.retourPrez {
+            display: flex;
+        }
+
+
+
+    }
+
+    /*fin du header*/
+    &>main {
+
+        /*debut homepage*/
+        &>section {
+            width: 100%;
+
+
+
+            &>#sectionArticleGauche {
+                float: left;
+                padding: 10px;
+
+                &>.homecards {
+
+
+                    &>h2 {
+                        
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: #ffffff;
+                        color: #653bb8;
+                        padding: 15px;
+                    }
+
+                    &>img {
+                        width: 700px;
+                        
+                    }
+
+                    &:last-child>img  {
+                        width: 700px;
+                        height: 700px;
+                        
+                    }
+                }
+            }
+
+            &>#sectionArticleDroite {
+                float: right;
+                width: 400px;
+                padding: 10px;
+
+                &>p {
+                    width: 400px;
+                    background-color: #ffffff;
+                    color: #653bb8;
+                    white-space: pre-line;
+
+                    &>span {
+                        font-weight: bold;
+                    }
+                }
+
+                &>img {
+                    width: 400px;
+                }
+
+                &>h3 {
+                    width: 400px;
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #ffffff;
+                    color: #653bb8;
+                }
+            }
+        }
+
+        /*fin homepage*/
+
+        /* debut page stagiaire*/
+
+        &>#trombi {
+            width: 90%;
+            margin: auto;
+
+            &>#trombiTitle {
+                padding: 25px;
+            }
+
+            &>#challenger {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+
+                &>.studentCard {
+                    width: 200px;
+                    height: 200px;
+                    background-color: #653bb8;
+                    margin: 10px auto;
+
+                    &>img {
+                        width: 200px;
+                        height: 150px;
+                    }
+
+                    &>h3 {
+                        width: 200px;
+                        height: 50px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: black;
+                        background-color: #653bb8;
+                        font-family: RetroGaming;
+
+                    }
+
+                    
+                }
+
+                &>.studentCard.hovered {
+                    box-shadow: 0 0 20px 10px rgba(255, 255, 0, 0.5), 0 0 20px 10px rgba(255, 0, 0, 0.5);
+                }
+            }
+
+            &>#plaquettes {
+                width: 900px;
+                height: 500px;
+                position: relative;
+                margin: 0 auto;
+                margin-top: 20px;
+                display: none;
+
+                &>.detailstudent {
+                    position: absolute;
+                    width: 900px;
+                    height: 500px;
+                    background-color: #653bb8;
+                    display: flex;
+
+                    &>.infoGauche {
+                        width: 300px;
+                        height: 500px;
+                        display: flex;
+                        flex-direction: column;
+
+                        &>img {
+                            width: 250px;
+                            height: 300px;
+                            margin: 25px auto;
+                        }
+
+                        &>.iconeRsocial {
+                            width: 250px;
+                            height: 200px;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            align-items: center;
+                            margin: 0 auto;
+
+                            &>a {
+                                width: 100px;
+                                height: 100px;
+
+                                &>img{
+                                    width: 100px;
+                                    height: 100px;
+                                }
+
+                            }
+                        }
+                    }
+
+                    &>.infoDroite {
+                        width: 600px;
+                        height: 500px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
+                        border-left: 1px solid black;
+
+                        &>.intro {
+                            width: 500px;
+                            height: 200px;
+                            display: flex;
+                            margin: 25px auto;
+                            //border: 1px solid black;
+                            font-family: Titania-Regular;
+                            color: #dc3c4d;
+                            font-size: 1.1rem;
+                            
+                            
+                        }
+
+                        &>h3{
+                            width: 600px;
+                            font-family: RetroGaming;
+                            font-size: 1.2rem;
+                            //border: 1px solid black;
+                            //display: flex;
+                            margin-bottom: 25px;
+                        }
+
+                        &>.ficheTechnique {
+                            width: 600px;
+                            height: 250px;
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: wrap;
+                            //border: 1px solid black;
+
+                            &>p {
+                                width: 250px;
+                                font-family: RetroGaming;
+                                font-size: 0.7rem;
+                                text-align: start;
+                                margin: 25px auto;
+                                display: flex;
+                                //border: 1px solid black;
+
+                            }
+
+                            
+
+                        }
+
+                        &>.liens {
+                            width: 500px;
+                            height: 50px;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+
+                            &>a{
+                                color: #dc3c4d;
+                            }
+                            
+
+                        }
+
+                    }
+
+                }
+            }
+        }
+
+        /*fin stagiares*/
+
+        /*début page projets*/
+
+        &>#projets {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 25px;
+
+            &>.introduction {
+                font-family: NEONLEDLight;
+                text-align: center;
+                background-color: #653bb8;
+                color: #dc3c4d;
+
+
+            }
+
+            &>.cardsProjetSolo {
+                width: 1000px;
+                height: 400px;
+                display: flex;
+                flex-direction: row;
+
+                &>.imgProjet {
+                    width: 500px;
+                    height: 300px;
+
+                    &>img {
+                        width: 500px;
+                        height: 300px;
+
+                    }
+
+                }
+
+                &>.infoProjet {
+                    width: 500px;
+                    height: 300px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    background-color: #653bb8;
+
+                    &>h3 {
+                        display: flex;
+                        width: 500px;
+                        height: 50px;
+                        align-items: center;
+                        justify-content: center;
+                        color: #00ffff;
+                        font-family: XmasTerpieceSwashes;
+
+                    }
+
+                    &>.distanciation {
+                        width: 500px;
+                        height: 150px;
+                        white-space: pre-line;
+                        color: #00ffff;
+                        padding-left: 10px;
+                        font-family: XmasTerpieceSwashes;
+
+                        &>span {
+
+                            font-family: XmasTerpiece;
+                        }
+                    }
+
+                    &>.resume {
+                        width: 450px;
+                        height: 100px;
+                        display: flex;
+                        align-items: center;
+                        color: #00ffff;
+                        padding-left: 10px;
+
+                        font-family: XmasTerpieceSwashes;
+
+                    }
+
+
+
+
+                }
+            }
+
+            &>.cardsProjetGroupe {
+                width: 1000px;
+                height: 400px;
+                display: flex;
+                flex-direction: row;
+
+                &>.imgProjet {
+                    width: 500px;
+                    height: 300px;
+
+                    &>img {
+                        width: 500px;
+                        height: 300px;
+
+                    }
+
+                }
+
+                &>.infoProjet {
+                    width: 500px;
+                    height: 300px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    background-color: #653bb8;
+
+                    &>h3 {
+                        display: flex;
+                        width: 500px;
+                        height: 50px;
+                        align-items: center;
+                        justify-content: center;
+                        color: #00ffff;
+                        font-family: XmasTerpieceSwashes;
+
+                    }
+
+                    &>.distanciation {
+                        width: 500px;
+                        height: 150px;
+                        white-space: pre-line;
+                        color: #00ffff;
+                        padding-left: 10px;
+                        font-family: XmasTerpieceSwashes;
+
+                        &>span {
+
+                            font-family: XmasTerpiece;
+                        }
+                    }
+
+                    &>.resume {
+                        width: 450px;
+                        height: 100px;
+                        display: flex;
+                        align-items: center;
+                        color: #00ffff;
+                        padding-left: 10px;
+
+                        font-family: XmasTerpieceSwashes;
+
+                    }
+
+
+
+
+                }
+            }
+        }
+
+        /*fin page projets*/
+
+        /*début de pas actualités*/
+
+        &>.actua {
+            text-align: center; 
+            padding: 20px; 
+
+            &>#articles {
+                width: 80%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin: 0 auto;
+
+                
+
+                &>.article {
+                    width: 250px;
+                    height: auto;
+                    margin: 10px;
+                    background-color: #6E51B9; 
+                    border: 1px solid #653bb8; 
+                    border-radius: 5px; 
+                    padding: 10px;
+                    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
+                    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+                    cursor: pointer;
+
+                   
+
+                    
+
+                    &>h3 {
+                        font-size: 18px;
+                        margin-bottom: 5px;
+                        color: #8790BA
+                    }
+
+                    &>a {
+                        width: 250px;
+                        height: auto;
+                        margin-bottom: 5px;
+
+                        &>img{
+                            width: 250px;
+                            height: 180px;
+                        }
+                    }
+
+                    &>p {
+                        font-size: 14px;
+                        color: #8790BA;
+                    }
+
+                    
+                }
+
+                
+                
+            }
+        }
+
+        /*fin de page actualités*/
+
+        /*debut detail actualité article ouais j'ai pas ecris ca dans l'ordre mais je m'en fiche*/
+
+        &>.detail-article{
+            width: 90%;
+            margin: auto;
+            background-color: #653bb8;
+
+            &>h2{
+                text-align: center;
+                padding: 15px;
+            }
+
+            &>.composant{
+                text-align: center;
+                
+                &>figure{
+
+                    &>img{
+                        width: 500px;
+                        
+                        padding: 15px;
+                    }
+
+                }
+                
+
+                &>p{
+                    padding: 15px;
+                }
+            }
+
+            &>.liste{
+                
+
+                &>ol{
+padding: 15px;
+                    &>li{
+                        border: 1px solid white;
+                        padding: 15px;
+                        margin: 5px;
+                    }
+                }
+            }
+
+        }
+        
+        @keyframes retourPrez {
+            from {
+                
+                
+            }
+            to {
+               
+                opacity: 0;
+                
+                
+            }
+        }
+        
+        @keyframes deroulementmenu {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+                
+            }
+        }
+
+        
+    }
+
+    &>footer{
+        width: 80%;
+        background-color: #653bb8;
+        margin: 15px auto;
+    }
+}

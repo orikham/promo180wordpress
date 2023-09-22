@@ -1,0 +1,517 @@
+@charset "UTF-8";
+/*
+Theme Name: promo180
+Theme URI: 
+Author: toi
+Description: My theme
+Tags: Responsive web design
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.row-limit-size {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: "Titania-Outline";
+  src: url(./media/font/Titania-Outline.ttf);
+}
+@font-face {
+  font-family: "Titania-Regular";
+  src: url(./media/font/Titania-Regular.ttf);
+}
+@font-face {
+  font-family: "Titania-Shadow";
+  src: url(./media/font/Titania-Shadow.ttf);
+}
+@font-face {
+  font-family: "NeolandSerif";
+  src: url(./media/font/Neoland\ Serif.ttf);
+}
+@font-face {
+  font-family: "Storyboo";
+  src: url(./media/font/Storyboo.TTF);
+}
+@font-face {
+  font-family: "NEONLEDLight";
+  src: url(./media/font/NEONLEDLight.otf);
+}
+@font-face {
+  font-family: "XmasTerpiece";
+  src: url(./media/font/XmasTerpiece.ttf);
+}
+@font-face {
+  font-family: "XmasTerpieceSwashes";
+  src: url(./media/font/XmasTerpieceSwashes.ttf);
+}
+@font-face {
+  font-family: "RetroGaming";
+  src: url(./media/font/Retro\ Gaming.ttf);
+}
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(./media/image/fond.png);
+  background-repeat: repeat;
+  /*debut du header*/
+  /*fin du header*/
+}
+body > header {
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  position: relative;
+}
+body > header > #divlogo {
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+}
+body > header > #divlogo > #logoVideo {
+  width: 200px;
+  height: 200px;
+}
+body > header > #menu {
+  position: absolute;
+  top: 10px;
+  left: 17%;
+  z-index: 2;
+  display: none;
+}
+body > header > #menu > ul {
+  list-style: none;
+  display: flex;
+}
+body > header > #menu > ul > li {
+  margin-bottom: 10px;
+}
+body > header > #menu > ul > li > a {
+  text-decoration: none;
+}
+body > header > #menu > ul > li > a > img {
+  width: 200px;
+  height: 200px;
+}
+body > header > #menu.affiche {
+  display: block;
+  animation: deroulementmenu 2.5s forwards;
+}
+body > header > .prez {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  background-color: #653bb8;
+  position: absolute;
+  left: 17%;
+}
+body > header > .prez > h1 {
+  font-family: Titania-Regular;
+  font-size: 4rem;
+  color: #dc3c4d;
+  padding-top: 15px;
+}
+body > header > .prez > p {
+  font-family: Titania-Regular;
+  font-size: 2rem;
+  color: #dc3c4d;
+}
+body > header > #prez.retourPrez {
+  display: flex;
+}
+body > main {
+  /*debut homepage*/
+  /*fin homepage*/
+  /* debut page stagiaire*/
+  /*fin stagiares*/
+  /*début page projets*/
+  /*fin page projets*/
+  /*début de pas actualités*/
+  /*fin de page actualités*/
+  /*debut detail actualité article ouais j'ai pas ecris ca dans l'ordre mais je m'en fiche*/
+}
+body > main > section {
+  width: 100%;
+}
+body > main > section > #sectionArticleGauche {
+  float: left;
+  padding: 10px;
+}
+body > main > section > #sectionArticleGauche > .homecards > h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  color: #653bb8;
+  padding: 15px;
+}
+body > main > section > #sectionArticleGauche > .homecards > img {
+  width: 700px;
+}
+body > main > section > #sectionArticleGauche > .homecards:last-child > img {
+  width: 700px;
+  height: 700px;
+}
+body > main > section > #sectionArticleDroite {
+  float: right;
+  width: 400px;
+  padding: 10px;
+}
+body > main > section > #sectionArticleDroite > p {
+  width: 400px;
+  background-color: #ffffff;
+  color: #653bb8;
+  white-space: pre-line;
+}
+body > main > section > #sectionArticleDroite > p > span {
+  font-weight: bold;
+}
+body > main > section > #sectionArticleDroite > img {
+  width: 400px;
+}
+body > main > section > #sectionArticleDroite > h3 {
+  width: 400px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  color: #653bb8;
+}
+body > main > #trombi {
+  width: 90%;
+  margin: auto;
+}
+body > main > #trombi > #trombiTitle {
+  padding: 25px;
+}
+body > main > #trombi > #challenger {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+body > main > #trombi > #challenger > .studentCard {
+  width: 200px;
+  height: 200px;
+  background-color: #653bb8;
+  margin: 10px auto;
+}
+body > main > #trombi > #challenger > .studentCard > img {
+  width: 200px;
+  height: 150px;
+}
+body > main > #trombi > #challenger > .studentCard > h3 {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: #653bb8;
+  font-family: RetroGaming;
+}
+body > main > #trombi > #challenger > .studentCard.hovered {
+  box-shadow: 0 0 20px 10px rgba(255, 255, 0, 0.5), 0 0 20px 10px rgba(255, 0, 0, 0.5);
+}
+body > main > #trombi > #plaquettes {
+  width: 900px;
+  height: 500px;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: none;
+}
+body > main > #trombi > #plaquettes > .detailstudent {
+  position: absolute;
+  width: 900px;
+  height: 500px;
+  background-color: #653bb8;
+  display: flex;
+}
+body > main > #trombi > #plaquettes > .detailstudent > .infoGauche {
+  width: 300px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+body > main > #trombi > #plaquettes > .detailstudent > .infoGauche > img {
+  width: 250px;
+  height: 300px;
+  margin: 25px auto;
+}
+body > main > #trombi > #plaquettes > .detailstudent > .infoGauche > .iconeRsocial {
+  width: 250px;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+body > main > #trombi > #plaquettes > .detailstudent > .infoGauche > .iconeRsocial > a {
+  width: 100px;
+  height: 100px;
+}
+body > main > #trombi > #plaquettes > .detailstudent > .infoGauche > .iconeRsocial > a > img {
+  width: 100px;
+  height: 100px;
+}
+body > main > #trombi > #plaquettes > .detailstudent > .infoDroite {
+  width: 600px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-left: 1px solid black;
+}
+body > main > #trombi > #plaquettes > .detailstudent > .infoDroite > .intro {
+  width: 500px;
+  height: 200px;
+  display: flex;
+  margin: 25px auto;
+  font-family: Titania-Regular;
+  color: #dc3c4d;
+  font-size: 1.1rem;
+}
+body > main > #trombi > #plaquettes > .detailstudent > .infoDroite > h3 {
+  width: 600px;
+  font-family: RetroGaming;
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+body > main > #trombi > #plaquettes > .detailstudent > .infoDroite > .ficheTechnique {
+  width: 600px;
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+body > main > #trombi > #plaquettes > .detailstudent > .infoDroite > .ficheTechnique > p {
+  width: 250px;
+  font-family: RetroGaming;
+  font-size: 0.7rem;
+  text-align: start;
+  margin: 25px auto;
+  display: flex;
+}
+body > main > #trombi > #plaquettes > .detailstudent > .infoDroite > .liens {
+  width: 500px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+body > main > #trombi > #plaquettes > .detailstudent > .infoDroite > .liens > a {
+  color: #dc3c4d;
+}
+body > main > #projets {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+}
+body > main > #projets > .introduction {
+  font-family: NEONLEDLight;
+  text-align: center;
+  background-color: #653bb8;
+  color: #dc3c4d;
+}
+body > main > #projets > .cardsProjetSolo {
+  width: 1000px;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+}
+body > main > #projets > .cardsProjetSolo > .imgProjet {
+  width: 500px;
+  height: 300px;
+}
+body > main > #projets > .cardsProjetSolo > .imgProjet > img {
+  width: 500px;
+  height: 300px;
+}
+body > main > #projets > .cardsProjetSolo > .infoProjet {
+  width: 500px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #653bb8;
+}
+body > main > #projets > .cardsProjetSolo > .infoProjet > h3 {
+  display: flex;
+  width: 500px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  color: #00ffff;
+  font-family: XmasTerpieceSwashes;
+}
+body > main > #projets > .cardsProjetSolo > .infoProjet > .distanciation {
+  width: 500px;
+  height: 150px;
+  white-space: pre-line;
+  color: #00ffff;
+  padding-left: 10px;
+  font-family: XmasTerpieceSwashes;
+}
+body > main > #projets > .cardsProjetSolo > .infoProjet > .distanciation > span {
+  font-family: XmasTerpiece;
+}
+body > main > #projets > .cardsProjetSolo > .infoProjet > .resume {
+  width: 450px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  color: #00ffff;
+  padding-left: 10px;
+  font-family: XmasTerpieceSwashes;
+}
+body > main > #projets > .cardsProjetGroupe {
+  width: 1000px;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+}
+body > main > #projets > .cardsProjetGroupe > .imgProjet {
+  width: 500px;
+  height: 300px;
+}
+body > main > #projets > .cardsProjetGroupe > .imgProjet > img {
+  width: 500px;
+  height: 300px;
+}
+body > main > #projets > .cardsProjetGroupe > .infoProjet {
+  width: 500px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #653bb8;
+}
+body > main > #projets > .cardsProjetGroupe > .infoProjet > h3 {
+  display: flex;
+  width: 500px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  color: #00ffff;
+  font-family: XmasTerpieceSwashes;
+}
+body > main > #projets > .cardsProjetGroupe > .infoProjet > .distanciation {
+  width: 500px;
+  height: 150px;
+  white-space: pre-line;
+  color: #00ffff;
+  padding-left: 10px;
+  font-family: XmasTerpieceSwashes;
+}
+body > main > #projets > .cardsProjetGroupe > .infoProjet > .distanciation > span {
+  font-family: XmasTerpiece;
+}
+body > main > #projets > .cardsProjetGroupe > .infoProjet > .resume {
+  width: 450px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  color: #00ffff;
+  padding-left: 10px;
+  font-family: XmasTerpieceSwashes;
+}
+body > main > .actua {
+  text-align: center;
+  padding: 20px;
+}
+body > main > .actua > #articles {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+body > main > .actua > #articles > .article {
+  width: 250px;
+  height: auto;
+  margin: 10px;
+  background-color: #6E51B9;
+  border: 1px solid #653bb8;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+}
+body > main > .actua > #articles > .article > h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #8790BA;
+}
+body > main > .actua > #articles > .article > a {
+  width: 250px;
+  height: auto;
+  margin-bottom: 5px;
+}
+body > main > .actua > #articles > .article > a > img {
+  width: 250px;
+  height: 180px;
+}
+body > main > .actua > #articles > .article > p {
+  font-size: 14px;
+  color: #8790BA;
+}
+body > main > .detail-article {
+  width: 90%;
+  margin: auto;
+  background-color: #653bb8;
+}
+body > main > .detail-article > h2 {
+  text-align: center;
+  padding: 15px;
+}
+body > main > .detail-article > .composant {
+  text-align: center;
+}
+body > main > .detail-article > .composant > figure > img {
+  width: 500px;
+  padding: 15px;
+}
+body > main > .detail-article > .composant > p {
+  padding: 15px;
+}
+body > main > .detail-article > .liste > ol {
+  padding: 15px;
+}
+body > main > .detail-article > .liste > ol > li {
+  border: 1px solid white;
+  padding: 15px;
+  margin: 5px;
+}
+@keyframes retourPrez {
+  to {
+    opacity: 0;
+  }
+}
+@keyframes deroulementmenu {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+body > footer {
+  width: 80%;
+  background-color: #653bb8;
+  margin: 15px auto;
+}/*# sourceMappingURL=style.css.map */
